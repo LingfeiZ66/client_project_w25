@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 1</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -11,12 +12,12 @@
             <a href = "#main">Skip to Main Content</a>
             <nav>
                 <ul>
-                    <li class="active"><a href = "index.html">Home</a></li>
-                    <li><a href = "cew.html">CEW+</a></li>
-                    <li><a href="first_gen.html">First Gen</a></li>
-                    <li><a href="food_pantry.html">Food Pantry</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cew.html">CEW+</a></li>
+                  <li><a href="first_gen.html">First Gen</a></li>
+                  <li class="active"><a href="food_pantry.html">Food Pantry</a></li>
                 </ul>
-            </nav>
+              </nav>
             <h1>WELCOME TO MAIZE & BLUE CUPBOARD</h1>
 
     </header>
@@ -29,17 +30,49 @@
         </div>
 
         <div>
-            <h2>MAKE AN APPOINTMENT NOW</h2>
+            <h3>MAKE AN APPOINTMENT NOW</h3>
             <p>Shopping at the Maize and Blue Cupboard is by appointment only.  Please make an appointment by visiting our sign up page <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2025-01">here</a>.</p>
-
+            <br>
+            <p>Please note:</p>
+            <ul>
+                <li>Make sure to bring your MCard to your appointment!</li>
+                <li>Only schedule your appointment for a date you’re able to show up for.</li>
+                <li>If you’ve scheduled an appointment you’re no longer able to make it, please cancel and reschedule so that another person can take that date.</li>
+            </ul>
+            </p>
+            <br>
         </div>
 
         <div>
-            <h2>WHO WE ARE</h2>
+            <h3>WHO WE ARE</h3>
             <p>College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard is here to provide an immediate and comprehensive response for the U-M community. By offering resources, educational opportunities, compassionate support and more, we help students develop the skills to make informed decisions.</p>
 
         </div>
-            
+        <div>
+            <div>
+                <form id="foodPantryForm" action="https://formspree.io/f/xjkvrgwe" method="post">
+                    <fieldset>
+                        <legend>Food Pantry Appointment</legend>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" placeholder="Eg: Sara" name="first-name" required>
+                
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" placeholder="Eg: James" name="last-name" required>
+                
+                        <label for="UM_email">UM Email:</label>
+                        <input type="email" id="UM_email" placeholder="SaraJ@umich.edu" name="email" required>
+                
+                        <label for="date">Select a Date:</label>
+                        <input type="date" id="date" name="available-date" required>
+                
+                        <label for="message">Leave A Message:</label>
+                        <textarea name="message" id="message" placeholder="Any additional information"></textarea>
+                        <br>
+                
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>
             <!-- Jackie Wolf -->
     
         <div></div>
