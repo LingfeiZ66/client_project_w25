@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Success Portal</title>
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <a href="main-content" class="skip-to-main">Skip to Main Content</a>
+        <a href="#main-content" class="skip-to-main">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
@@ -96,7 +97,15 @@
         </section>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <p>MSI Academic Advising | 
+            <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a>
+          </p>
+          <p>
+            &copy; <span id="yearIndex"></span> University of Michigan
+          </p>
+          <script>
+            document.getElementById("yearIndex").textContent = new Date().getFullYear();
+          </script>
+    </footer>
 </body>
 </html>

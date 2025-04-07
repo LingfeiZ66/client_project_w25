@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEW+</title>
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -86,7 +87,15 @@
     </main>
     
     <footer>
-        <p><a href="https://www.cew.umich.edu/">Visit CEW+ Official Website</a></p>
+        <p>
+            <a href="https://www.cew.umich.edu/">Visit CEW+ Official Website</a>
+          </p>
+          <p>
+            &copy; <span id="yearCEW"></span> CEW+
+          </p>
+          <script>
+            document.getElementById("yearCEW").textContent = new Date().getFullYear();
+          </script>
     </footer>
 </body>
 </html>

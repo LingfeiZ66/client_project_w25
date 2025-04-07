@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 1</title>
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,9 +18,9 @@
                 <li><a href="food_pantry.html">Food Pantry</a></li>
             </ul>
             </nav>
+        <h1>First Generation</h1>
     </header>
         <main id="main">
-            <h1>First Generation</h1>
             <section>
                 <h2>MICHIGAN IS OUR HOME</h2>
                 <p>Did you know there are approximately 4,000 students at the University of Michigan who are among the
@@ -57,7 +58,15 @@
             </section>
     </main>
     <footer>
-        <p><a href="https://firstgen.umich.edu/">UM First Generation</a></p>
+        <p>
+            <a href="https://firstgen.umich.edu/">UM First Generation</a>
+        </p>
+        <p>
+            &copy; <span id="footerYearFirstGen"></span> University of Michigan
+        </p>
+        <script>
+            document.getElementById("footerYearFirstGen").textContent = new Date().getFullYear();
+        </script>
     </footer>
 
 </body>
